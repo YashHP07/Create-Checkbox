@@ -6,47 +6,61 @@
     <title>Checkbox Structure</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
+        .top{
+            background-color: rgb(190, 186, 181);
+            width: 180px;
+        }
     .child{
         margin-left: 20px;
     }
     .parent{
         margin-top: 10px;
     }
+    .checkbox-container {
+        display: none;
+    }
     </style>
 </head>
 <body>
+     <div class="top">manage permission</div>
     <form id="permissionForm">
-        <div>
-            <label><input type="checkbox" class="parent" id="property"> Property</label>
+        <select id="dropdown">
+            <option value="none">Select an option</option>
+            <option value="subsubgh">Subsubgh</option>
+        </select>
+        <div class="checkbox-container">
             <div>
-                <label><input type="checkbox" class="child property"> Edit Property</label><br>
-                <label><input type="checkbox" class="child property"> Remove Property</label><br>
-                <label><input type="checkbox" class="child property"> Add Property</label><br>
+                <label><input type="checkbox" class="parent" id="property"> Property</label>
+                <div>
+                    <label><input type="checkbox" class="child property"> Edit Property</label><br>
+                    <label><input type="checkbox" class="child property"> Remove Property</label><br>
+                    <label><input type="checkbox" class="child property"> Add Property</label><br>
+                </div>
             </div>
-        </div>
-        <div>
-            <label><input type="checkbox" class="parent" id="testimonial"> Testimonial</label>
             <div>
-                <label><input type="checkbox" class="child testimonial"> Add</label><br>
-                <label><input type="checkbox" class="child testimonial"> Remove</label><br>
-                <label><input type="checkbox" class="child testimonial"> View</label><br>
-                <label><input type="checkbox" class="child testimonial"> Edit</label><br>
+                <label><input type="checkbox" class="parent" id="testimonial"> Testimonial</label>
+                <div>
+                    <label><input type="checkbox" class="child testimonial"> Add</label><br>
+                    <label><input type="checkbox" class="child testimonial"> Remove</label><br>
+                    <label><input type="checkbox" class="child testimonial"> View</label><br>
+                    <label><input type="checkbox" class="child testimonial"> Edit</label><br>
+                </div>
             </div>
-        </div>
-        <div>
-            <label><input type="checkbox" class="parent" id="users"> Users</label>
             <div>
-                <label><input type="checkbox" class="child users"> Edit User</label><br>
-                <label><input type="checkbox" class="child users"> View User List</label><br>
-                <label><input type="checkbox" class="child users"> Add User</label><br>
+                <label><input type="checkbox" class="parent" id="users"> Users</label>
+                <div>
+                    <label><input type="checkbox" class="child users"> Edit User</label><br>
+                    <label><input type="checkbox" class="child users"> View User List</label><br>
+                    <label><input type="checkbox" class="child users"> Add User</label><br>
+                </div>
             </div>
-        </div>
-        <div>
-            <label><input type="checkbox" class="parent" id="membership"> Membership</label>
             <div>
-                <label><input type="checkbox" class="child membership"> Edit Membership</label><br>
-                <label><input type="checkbox" class="child membership"> Remove Membership</label><br>
-                <label><input type="checkbox" class="child membership"> Add Membership</label><br>
+                <label><input type="checkbox" class="parent" id="membership"> Membership</label>
+                <div>
+                    <label><input type="checkbox" class="child membership"> Edit Membership</label><br>
+                    <label><input type="checkbox" class="child membership"> Remove Membership</label><br>
+                    <label><input type="checkbox" class="child membership"> Add Membership</label><br>
+                </div>
             </div>
         </div>
         <button type="submit">Submit</button>
